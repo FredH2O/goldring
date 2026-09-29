@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  ----animate-nudge: nudge 3s ease-in-out infinite;
+
+  @keyframes nudge {
+    0%,
+    70%,
+    100% {
+      transform: translateX(0);
+    }
+
+    85% {
+      transform: translateX(6px);
+    }
+  }
+}
+
+body {
+  margin: 0;
+}
